@@ -24,9 +24,9 @@ public class TiposPrimitivos {
         boolean bool = false;   //true ou false Boolean é a classe que pode ser usada para representar um boolean    
         char c = 'c';           //caractere unicode de 16 bits 0 até 65535 ou \u0000 \uffff 
         
-        String string = "valor"; //Não é um tipo primitivo porém 
+        String string = "hello"; //Não é um tipo primitivo porém 
         //import static java.lang.System.out; 
-        out.println("Printando os tipos primitivos com printf primitivos:");
+        out.println("Printando os tipos primitivos com printf:");
         //voce pode quegrar uma expressão em várias linhas se ela for
         //muito grande.
         System.out.printf(
