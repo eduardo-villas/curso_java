@@ -102,6 +102,9 @@ public class Operadores {
         if (a == 1 || b == 1)
             saidaTela.println("a ou b são iquais a 1");
         
+        if (!(a == b))
+            saidaTela.println("a e b são diferentes");
+        
         saidaTela.println();
     }
 
