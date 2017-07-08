@@ -43,10 +43,12 @@ public class ClassesEObjetos {
     }
 
     private static void mostraEstado(Carro carro) {
+        
         String modelo = carro.getModelo();
         String marca = carro.getMarca();
         String motor = carro.getMotor();
         int anoFabricadao = carro.getAnoFabricacao();
+        
         out.printf("Modelo: %s \n"
                 + "Marca: %s\n"
                 + "Motor: %s\n"

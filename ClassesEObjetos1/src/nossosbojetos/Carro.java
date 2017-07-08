@@ -15,8 +15,7 @@ public class Carro {
     private String modelo;
     private String motor;
     private int anoFabricacao;
-    
-    //construtor sem argumentos
+     //construtor sem argumentos
     //o compilador já oferece um construtor sem argumentos.
     //tente deletar o construtor e compilar sem ele.
     public Carro() {
