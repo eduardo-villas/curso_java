@@ -11,7 +11,7 @@ package helloworld;
  * @author eduardov
  */
 //classe publica HelloWorld
-// classes tem um 
+// todas classes tem um nome.
 public class HelloWorld {
 
     /**
