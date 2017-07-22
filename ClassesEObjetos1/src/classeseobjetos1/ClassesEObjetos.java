@@ -7,6 +7,7 @@ package classeseobjetos1;
 
 import nossosbojetos.Carro;
 import static java.lang.System.out;
+import nossosbojetos.Motor;
 /**
  *
  * @author eduardov
@@ -18,17 +19,13 @@ public class ClassesEObjetos {
      */
     public static void main(String[] args) {
         //variável local ao metodo main
-        Carro miniCooper = new Carro();
+        Carro miniCooper = new Carro("BMW", new Motor());
         
-        miniCooper.setMotor("MOTO BMW V6");
-        miniCooper.setMarca("BMW");
         miniCooper.setModelo("Mini Cooper");
         miniCooper.setAnoFabricacao(2016);
         
-        Carro gol = new Carro();
+        Carro gol = new Carro("VOLKSWAGEN", new Motor());
         
-        gol.setMotor("VOLKSWAGEN 1.6");
-        gol.setMarca("VOLKSWAGEN");
         gol.setModelo("Gol");
         gol.setAnoFabricacao(2015);
         
@@ -37,24 +34,38 @@ public class ClassesEObjetos {
         //este metodo mostra os atributos do carro.
         //o conjunto de atributos de um carro em um dado momento é
         //chamado estado do objeto.
-        mostraEstado(miniCooper);
-        mostraEstado(gol);
+        mostraEstadoEAltera(gol);
+        mostraEstadoEAltera(miniCooper);
+        
         
     }
 
+    private static void mostraEstadoEAltera(Carro carro) {
+        mostraEstado(carro);
+        alteraAnoFabricacao(carro);
+        mostraEstado(carro);
+    }
+
+    private static void alteraAnoFabricacao(Carro carro) {
+        carro.setAnoFabricacao(1500);
+    }
+    
     private static void mostraEstado(Carro carro) {
         
         String modelo = carro.getModelo();
         String marca = carro.getMarca();
-        String motor = carro.getMotor();
+        Motor motor = carro.getMotor();
         int anoFabricadao = carro.getAnoFabricacao();
         
         out.printf("Modelo: %s \n"
                 + "Marca: %s\n"
                 + "Motor: %s\n"
                 + "Ano de fabricação:%d\n",
-                modelo, marca, motor, anoFabricadao);
+                modelo, marca, motor.toString(), anoFabricadao);
         out.println();        
     }
+
+    
+    
     
 }
