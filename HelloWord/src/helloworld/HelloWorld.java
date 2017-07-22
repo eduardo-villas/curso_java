@@ -24,6 +24,11 @@ public class HelloWorld {
     // System.out.println(args.length);
     public static void main(String[] args) {
         System.out.println("Hello world");
+        HelloWorld.hello();
+    }
+    
+    public static void hello() {
+        System.out.println("metodo hello");
     }
     
 }

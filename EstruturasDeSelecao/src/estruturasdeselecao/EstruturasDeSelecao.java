@@ -22,7 +22,7 @@ public class EstruturasDeSelecao {
     
     public static void main(String[] args) {
         
-        rodaExemploIf();
+    //    rodaExemploIf();
         rodaExemploSwitch();
         
     }
@@ -66,13 +66,16 @@ public class EstruturasDeSelecao {
         switch (diaDaSemana) {
             case 2:
                 saidaParaTela.println("Hoje é segunda feira");
+                break;
             case 3:
                 saidaParaTela.println("Hoje é terça feira");
+                break;
             case 4:
                 saidaParaTela.println("Hoje é quarta feira");
                 break;
             case 5:
                 saidaParaTela.println("Hoje é quinta feira");
+                break;
             case 6:
                 saidaParaTela.println("Hoje é sexta feira.");
                 saidaParaTela.println("Achei que nunca chegaria.");
