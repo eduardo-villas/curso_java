@@ -18,5 +18,33 @@ public class Motor extends Object {
     public String toString() {
         return "Motor{" + "cilindrada=" + cilindrada + ", valvulas=" + valvulas + '}';
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Motor other = (Motor) obj;
+        if (Float.floatToIntBits(this.cilindrada) != Float.floatToIntBits(other.cilindrada)) {
+            return false;
+        }
+        if (this.valvulas != other.valvulas) {
+            return false;
+        }
+        return true;
+    }
+    
     
 }
